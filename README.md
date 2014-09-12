@@ -1,5 +1,6 @@
 About
 -----
+[![Build Status](https://travis-ci.org/lightswitch05/rspec-set-header-example.svg?branch=master)](https://travis-ci.org/lightswitch05/rspec-set-header-example)
 
 This is an example app for a question [posted on StackOverflow](https://stackoverflow.com/questions/25815741/set-header-in-rspec-3-request)
 
