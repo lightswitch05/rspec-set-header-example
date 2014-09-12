@@ -1,0 +1,108 @@
+{
+	"id": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0",
+	"name": "Rspec Header Example",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "63aca90d-c4b7-7979-ccb2-0f50366314c8",
+			"name": "Products",
+			"description": "",
+			"order": [
+				"0c8b67aa-70e9-8430-85ab-37a6452b31cf",
+				"5bb8d69b-674d-bb03-cdf0-cc1418ff6a86",
+				"8dbe84b1-8596-5cd5-64f4-06565cbc4900"
+			],
+			"collection_name": "Rspec Header Example",
+			"collection_id": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0"
+		},
+		{
+			"id": "66f2257d-fc11-43e4-3bac-631ad37de8fe",
+			"name": "Sessions",
+			"description": "",
+			"order": [
+				"bd848aa9-9de0-1889-76ee-1905ff0e8d47"
+			],
+			"collection_name": "Rspec Header Example",
+			"collection_id": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0"
+		}
+	],
+	"timestamp": 1410475508826,
+	"synced": false,
+	"requests": [
+		{
+			"id": "0c8b67aa-70e9-8430-85ab-37a6452b31cf",
+			"headers": "Content-Type: application/json\nACCESS_TOKEN: oiX4AbvpneuLLYoRZL_H\n",
+			"url": "http://{{host}}:{{port}}/api/v1/posts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"time": 1410547286869,
+			"name": "Create Post",
+			"description": "Creates a Post",
+			"collectionId": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"post\":{\n    \"title\": \"This is my title\",\n    \"content\": \"This is my content\"\n  }\n}"
+		},
+		{
+			"id": "5bb8d69b-674d-bb03-cdf0-cc1418ff6a86",
+			"headers": "ACCESS_TOKEN: oiX4AbvpneuLLYoRZL_H\n",
+			"url": "http://{{host}}:{{port}}/api/v1/posts",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1410547442921,
+			"name": "Index Posts",
+			"description": "Fetch a list of Posts",
+			"collectionId": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8dbe84b1-8596-5cd5-64f4-06565cbc4900",
+			"headers": "ACCESS_TOKEN: oiX4AbvpneuLLYoRZL_H\n",
+			"url": "http://{{host}}:{{port}}/api/v1/posts/1",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"time": 1410547456936,
+			"name": "Show Post",
+			"description": "Retrieves a single Post",
+			"collectionId": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "bd848aa9-9de0-1889-76ee-1905ff0e8d47",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://{{host}}:{{port}}/api/v1/session",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"name": "Create a Session",
+			"description": "Creates a new Session",
+			"descriptionFormat": "html",
+			"time": 1403702267458,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "ff997158-a19c-9fb6-2b05-dc6dcc4b72e0",
+			"synced": false,
+			"rawModeData": "{\n  \"email\": \"bill_bob@example.com\",\n  \"password\": \"poor_password\"\n}"
+		}
+	]
+}
