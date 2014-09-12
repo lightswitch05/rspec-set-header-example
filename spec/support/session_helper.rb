@@ -26,7 +26,7 @@ module SessionHelper
     @request.headers[:access_token] = token
     @request.headers[:ACCESS_TOKEN] = token
     @request.headers[:HTTP_ACCESS_TOKEN] = token
-    
+
     @request.env['HTTP_ACCESS_TOKEN'] = token
     @request.env['ACCESS_TOKEN'] = token
     @request.env['access_token'] = token
@@ -46,5 +46,15 @@ module SessionHelper
     @request.env[:access_token] = token
     @request.env[:ACCESS_TOKEN] = token
     @request.env[:HTTP_ACCESS_TOKEN] = token
+
+    controller.request.env['HTTP_ACCESS_TOKEN'] = token
+    controller.request.env['ACCESS_TOKEN'] = token
+    controller.request.env['access_token'] = token
+    controller.request.env['http_access_token'] = token
+
+    controller.request.env[:http_access_token] = token
+    controller.request.env[:access_token] = token
+    controller.request.env[:ACCESS_TOKEN] = token
+    controller.request.env[:HTTP_ACCESS_TOKEN] = token
   end
 end
